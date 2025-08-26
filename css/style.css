@@ -1,0 +1,109 @@
+::selection {
+  background-color: #FEC260; 
+  color: black;           
+}
+body{
+   background-color: rgb(247, 236, 222);
+
+
+}
+
+
+    h1{
+     font-size: 50px;
+    font-family: Pacifico, cursive;
+    color: rgb(53, 46, 40);
+    font-weight: 500;
+    position: relative;
+    width: fit-content;
+    z-index:0;
+    
+    }
+h1::after{
+  content: '';
+  position: absolute;
+  width:100%;
+  background-color: #fec260;
+  height: 25%;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+ transition: all 0.5s;
+
+}
+h1:hover::after{
+    
+    height: 50%;
+
+
+}
+
+.contain{
+
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28
+}
+
+.contain h2{
+     width: fit-content;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+     color: transparent;
+
+}
+.form-control:focus{
+      border-color:#d99c39;
+      box-shadow: 0 0 0 .25rem rgba(254, 194, 96, 0.333);
+      background-color: #fff;
+}
+
+
+
+
+.submit-move{
+    width: fit-content;
+
+}
+
+.btn-submit{
+    background-color: #d1512d;
+    color: white;
+
+
+}
+.submit-move .btn:hover{
+    background-color: #bb4120;
+    border-color: #bb4120;
+    color: white;
+
+
+}
+.btn-visit{
+    background-color: #9eb23b;
+    color: white;
+}
+ .btn-visit.btn:hover{
+    background-color: #8a9e23;
+    border-color: #8a9e23;
+    color: white;
+}
+
+
+.btn-delete {
+
+    background-color: #eb1d36;
+    color: white;
+    border-color: #eb1d36;
+}
+
+.btn-delete.btn:hover{
+     background-color: #d30820;
+     border-color: #d30820;
+     color: white;
+
+}
