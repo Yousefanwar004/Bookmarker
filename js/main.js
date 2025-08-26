@@ -1,7 +1,6 @@
 var bookMarkName=document.getElementById('bookmarkName');
 var bookMarkUrl=document.getElementById('bookmarkURL');
 var rowData=document.getElementById('rowData');
-
 var bookMarklist;
 
 if (localStorage.getItem('bookmarks')!=null) {
