@@ -21,6 +21,15 @@ function addBookMark() {
 
     }
     else{
+     
+
+    var urlRegex = /^(https?:\/\/)([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(\/\S*)?$/;
+    if (!urlRegex.test(bookMarkUrl.value)) {
+        window.alert("Please enter a valid URL (must start with http:// or https://)");
+        return;
+    }
+
+        
   var bookMark={
         name:bookMarkName.value,
         site:bookMarkUrl.value,
